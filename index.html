@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Bazele Electricității</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bazele Electricității</h1>
+
+    <section id="slideshow">
+        <h2>Slideshow: Componente Electrice</h2>
+        <div class="slider">
+            <img src="img/rezistor.jpg" alt="Rezistor" class="slide active">
+            <img src="img/condensator.jpg" alt="Condensator" class="slide">
+            <img src="img/bobina.jpg" alt="Bobină" class="slide">
+        </div>
+        <button onclick="prevSlide()">◀</button>
+        <button onclick="nextSlide()">▶</button>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz: Cunoștințe despre electricitate</h2>
+        <p>Ce componentă stochează energie sub formă de câmp electric?</p>
+        <input type="radio" name="q1" value="rezistor"> Rezistor<br>
+        <input type="radio" name="q1" value="condensator"> Condensator<br>
+        <input type="radio" name="q1" value="bobina"> Bobină<br>
+        <button onclick="checkAnswer()">Verifică răspunsul</button>
+        <p id="quiz-result"></p>
+    </section>
+
+    <section id="contact">
+        <h2>Formular de contact</h2>
+        <form>
+            Nume: <input type="text"><br>
+            Email: <input type="email"><br>
+            Mesaj: <textarea></textarea><br>
+            <input type="submit" value="Trimite">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
